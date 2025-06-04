@@ -5,7 +5,7 @@ import net.serenitybdd.annotations.Steps;
 import net.thucydides.core.pages.PageObject;
 
 public class WebSite {
-    @Steps(shared = true)//ompartr para poder ser utilizada en funciones o metodos atravez de ello
+    @Steps//ompartr para poder ser utilizada en funciones o metodos atravez de ello
     PageObject swag;
 
     @Step("Navegar al sitio web")

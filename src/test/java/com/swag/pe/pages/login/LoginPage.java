@@ -12,4 +12,18 @@ public class LoginPage extends PageObject {
    @FindBy(id="login-button")
    protected WebElementFacade btn_login;
 
+
+   public void enterUserName(String username){
+       txt_username.sendKeys(username);
+   }
+    public void enterPassword(String password){
+        txt_password.sendKeys(password);
+    }
+    public void clickLoginButton(){
+        btn_login.click();
+
+    }
+
+
+
 }

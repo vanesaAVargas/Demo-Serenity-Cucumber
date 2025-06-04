@@ -6,15 +6,15 @@ import net.serenitybdd.annotations.Step;
 public class LoginStep extends LoginPage {
    @Step("Ingresar usuario")
     public void typeUsername(String username) {
-        txt_username.sendKeys(username);
+        enterUserName(username);
     }
     @Step("Ingresar contrasena")
     public void typePassword(String password) {
-        txt_password.sendKeys(password);
+        enterPassword(password);
     }
     @Step("Click en el boton login")
     public void clickLogin() {
-        btn_login.click();
+        clickLoginButton();
     }
 
 

@@ -12,7 +12,7 @@ import org.junit.Assert;
 public class LoginDef {
     @Steps(shared = true)
     WebSite url;
-    @Steps(shared = true)
+    @Steps
     LoginStep login;
     @Steps(shared = true)
     ValidationStep validate;
