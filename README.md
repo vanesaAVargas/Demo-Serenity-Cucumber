@@ -1,13 +1,22 @@
-# Swag Labs Automation with Serenity BDD + Cucumber
+# Serenity BDD with Cucumber and Java Framework
+
+Serenity BDD (formerly known as Thucydides) is an open-source test automation framework that helps you write well-structured, maintainable acceptance criteria and automated tests. When combined with Cucumber (a BDD tool) and Java, it provides a powerful solution for behavior-driven development.
+
+## Key Features
+
+- **BDD Support**: Integrates with Cucumber to write tests in Gherkin syntax
+- **Rich Reporting**: Generates detailed, narrative reports with screenshots
+- **Web Testing**: Built-in support for Selenium WebDriver
+- **Rest API Testing**: Includes support for REST-assured
+- **Parallel Execution**: Supports running tests in parallel
+- **Step Libraries**: Provides reusable step definitions for common actions
 
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Technology Stack](#technology-stack)
 - [Setup Instructions](#setup-instructions)
 - [Running Tests](#running-tests)
-- [Test Structure](#test-structure)
 - [Reporting](#reporting)
-- [Troubleshooting](#troubleshooting)
 
 ## Project Overview
 Automation framework for testing [Swag Labs](https://www.saucedemo.com/) demo e-commerce site using:
@@ -49,21 +58,6 @@ mvn clean verify -Dwebdriver.driver=firefox
 Run specific feature
 mvn clean verify -Dcucumber.filter.tags="@login"
 
-Test Structure
-src/
-├── main/
-│   ├── java/
-│   │   ├── pages/          # Page objects
-│   │   ├── steps/          # Step definitions
-│   │   └── utils/          # Helper classes
-│   └── resources/
-│       ├── serenity.conf   # Config file
-│       └── webdriver/      # Driver binaries
-└── test/
-    ├── java/
-    │   └── runners/        # Test runners
-    └── resources/
-        └── features/       # Gherkin feature files
 Reporting
 Serenity generates rich interactive reports located at:
 target/site/serenity/index.html
@@ -75,19 +69,3 @@ Sample report includes:
 -Timing metrics
 -Requirement coverage
 
-Troubleshooting
-
-Common Issues
-Browser compatibility:
-Ensure Chrome/Firefox matches driver version
-Download drivers to webdriver directory
-
-Test failures:
-Check application state
-Review screenshots in report
-
-Dependency conflicts:
-Run mvn dependency:tree to identify conflicts
-
-Getting Help
-For support, please open an issue in the project repository.
