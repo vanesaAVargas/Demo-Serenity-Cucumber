@@ -10,11 +10,11 @@ import net.serenitybdd.annotations.Steps;
 import org.junit.Assert;
 
 public class LoginDef {
-    @Steps(shared = true)
+    @Steps
     WebSite url;
     @Steps
     LoginStep login;
-    @Steps(shared = true)
+    @Steps
     ValidationStep validate;
     @Given("el usuario navega al sitio web")
     public void userNavigateTo(){
